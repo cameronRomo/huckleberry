@@ -10,48 +10,64 @@ body {
   height: 100%;
 }
 
-main {
-  background-color: hsl(0deg, 0%, 40%);
-  border-top: 8px solid hsl(0deg, 0%, 60%);
-  padding-bottom: 64px;
+header {
+  border-bottom: 8px solid hsl(0deg 0% 60%);
 }
 
-strong {
-  color: hsl(160deg, 100%, 30%);
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 3rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.25rem; /* 20 / 16 = 1.25 */
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
-.title {
-  font-size: 2rem;
+strong {
+  color: hsl(160deg 100% 30%);
 }
 
 .max-width-wrapper {
-  max-width: 448px;
-}
-
-section.max-width-wrapper {
   max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 24px;
 }
 
 .intro-chunk {
-  margin: 96px 0 64px 128px;
+  max-width: 415px;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+main {
+  background-color: hsl(0deg 0% 40%);
+  padding: 64px 0;
 }
 
 .card {
-  background-color: hsl(0deg, 0%, 100%);
-  margin: 64px 0 0 104px;
+  background-color: white;
   padding: 24px;
-  border-bottom: 8px solid hsl(0deg, 0%, 60%);
+  margin: 0 -24px;
+  border-bottom: 8px solid hsl(0deg 0% 60%);
 }
 
 .indented-heading {
   width: fit-content;
-  border-bottom: 8px solid hsl(45deg, 100%, 40%);
-  margin: -16px 0 8px -32px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-left: -32px;
+  margin-top: -16px;
+  margin-bottom: 1rem;
   padding: 16px 32px;
-  background-color: hsl(45deg, 100%, 50%);
+  background: hsl(45deg 100% 50%);
+  border-bottom: 8px solid hsl(45deg 100% 40%);
 }
